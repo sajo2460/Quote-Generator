@@ -41,7 +41,7 @@ async function getQuote() {
     // Stop loader and show quote
     removeLoadingSpinner();
   } catch (error) {
-    console.log('Whoops, no quote', error);
+     throw error;
   }
 }
 // Tweet Quote
